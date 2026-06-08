@@ -17,12 +17,12 @@ export default function HeroSection() {
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         {/* Left */}
         <div>
-          <motion.p
+          {/* <motion.p
             {...fadeUp(0.1)}
             className="text-[#C9A84C] text-xs font-bold tracking-widest uppercase mb-4"
           >
             {hero.tag}
-          </motion.p>
+          </motion.p> */}
 
           <motion.h1
             {...fadeUp(0.2)}

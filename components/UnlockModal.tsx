@@ -9,7 +9,6 @@ interface FormValues {
   name: string;
   email: string;
   phone: string;
-  whatsapp?: string;
   stage: string;
   field: string;
 }
@@ -37,7 +36,6 @@ export default function UnlockModal({ isOpen, onClose }: Props) {
       name: data.name,
       email: data.email,
       phone: data.phone,
-      whatsapp: data.whatsapp ?? "",
       stage: data.stage,
       field: data.field,
       timestamp: new Date().toLocaleString(),
@@ -135,18 +133,6 @@ export default function UnlockModal({ isOpen, onClose }: Props) {
                   className={inputClass}
                 />
                 {errors.phone && <p className={errorClass}>{errors.phone.message}</p>}
-              </div>
-
-              <div>
-                <label className={labelClass}>
-                  WhatsApp Number <span className="text-[#A0AEC0]/60">(optional — we&apos;ll send you the video link here)</span>
-                </label>
-                <input
-                  type="tel"
-                  {...register("whatsapp")}
-                  placeholder="+1 234 567 8900"
-                  className={inputClass}
-                />
               </div>
 
               <div>

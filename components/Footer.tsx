@@ -9,18 +9,7 @@ export default function Footer() {
           this site is not endorsed by Facebook in any way. FACEBOOK is a trademark of
           FACEBOOK, Inc.
         </p>
-        <div className="flex gap-6 justify-center">
-          <a href="#" className="text-[#A0AEC0] hover:text-white text-sm transition-colors">
-            Privacy Policy
-          </a>
-          <a href="#" className="text-[#A0AEC0] hover:text-white text-sm transition-colors">
-            Terms of Service
-          </a>
-        </div>
-        <p className="text-[#A0AEC0] text-xs">
-          © 2025 Research Mentor Clinic · Deepiotics. All rights reserved.
-        </p>
-      </div>
+       </div>
     </footer>
   );
 }

@@ -9,7 +9,7 @@ export const hero = {
     "Your doctorate is not the destination. It's the beginning of something bigger.",
   byline: "Led by Dr. Bhawna Nigam · Founder — Deepiotics · Research Mentor Clinic · DBACoach",
   sidebar: {
-    title: "IN THIS WORKSHOP YOU WILL LEARN",
+    title: "IN THIS VIDEO YOU WILL LEARN",
     items: [
       "How academia really works after a DBA",
       "The roadmap to becoming faculty / consultant / entrepreneur",
@@ -22,7 +22,7 @@ export const hero = {
 };
 
 export const stats = [
-  { value: 200, suffix: "+", label: "Doctorates Completed" },
+  { value: 200, suffix: "+", label: "Papers Published" },
   { value: 500, suffix: "+", label: "Active Scholars" },
   { value: 20, suffix: "+", label: "Countries Reached" },
   { value: 1000, suffix: "+", label: "Community Members" },
@@ -328,12 +328,12 @@ export const howItWorks = {
 };
 
 export const testimonials = [
-  { name: "Scholar Name", title: "DBA Graduate", country: "UAE", quote: "Testimonial quote placeholder — this program transformed how I approached my post-doctorate career completely." },
-  { name: "Scholar Name", title: "PhD Candidate", country: "India", quote: "Testimonial quote placeholder — the clarity and guidance I received was unmatched by anything else I found." },
-  { name: "Scholar Name", title: "EdD Graduate", country: "UK", quote: "Testimonial quote placeholder — I went from confused to confident in my academic and consulting path within weeks." },
-  { name: "Scholar Name", title: "DBA Scholar", country: "USA", quote: "Testimonial quote placeholder — Dr. Bhawna's system gave me a real roadmap, not just motivation." },
-  { name: "Scholar Name", title: "PhD Researcher", country: "Canada", quote: "Testimonial quote placeholder — the mentorship model here is genuinely different from what I experienced elsewhere." },
-  { name: "Scholar Name", title: "DBA Candidate", country: "Australia", quote: "Testimonial quote placeholder — finally someone who speaks to working professionals who have real experience." },
+  { name: "Saurabh Vishwakarma", title: "DBA Graduate", country: "India", quote: "Learned A Lot  — this program transformed how I approached my post-doctorate career completely." },
+  { name: "Sahil Patel", title: "PhD Candidate", country: "India", quote: "GUidance for Future — the clarity and guidance I received was unmatched by anything else I found." },
+  { name: "Michael Miller", title: "EdD Graduate", country: "UK", quote: "Doubts cleared effectively  — I went from confused to confident in my academic and consulting path within weeks." },
+  { name: "Kajal Mehta", title: "DBA Scholar", country: "India", quote: "Sorting out real world problems — Dr. Bhawna's system gave me a real roadmap, not just motivation." },
+  { name: "Rishabh Shrivastava", title: "PhD Researcher", country: "India", quote: "A path to grow — the mentorship model here is genuinely different from what I experienced elsewhere." },
+  { name: "Steve Richards", title: "DBA Candidate", country: "Australia", quote: "Expert Guidance  — finally someone who speaks to working professionals who have real experience." },
 ];
 
 export const faqs = [
