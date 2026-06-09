@@ -27,11 +27,9 @@ export default function UnlockModal({ isOpen, onClose }: Props) {
   } = useForm<FormValues>();
 
   async function onSubmit(data: FormValues) {
-    const GOOGLE_SHEET_URL =
-      "https://script.google.com/macros/s/AKfycbw7FsFAKLZ7G7FcS1oIn0dVAS4Dr8_dQ2AuMPULhkR_magksuAY1WJJP9JTvsNhQ2FG/exec";
+    // TODO: paste your deployed Apps Script URL here
+    const GOOGLE_SHEET_URL = "https://script.google.com/macros/s/AKfycbyVf6Qz61D4IYrMnp_pMxOqtmo36G1Cc24_x5Hew9r31oTlMuQhdH31bM-lKZi_rD__BQ/exec";
 
-    // GET with query params is the only CORS-safe way to call Google Apps Script
-    // from a browser. The request is "simple" so no preflight is sent.
     const qs = new URLSearchParams({
       name: data.name,
       email: data.email,
@@ -47,7 +45,7 @@ export default function UnlockModal({ isOpen, onClose }: Props) {
         mode: "no-cors",
       });
     } catch {
-      // opaque no-cors response — ignore, data still reaches the sheet
+      // no-cors responses are opaque — data still reaches the sheet
     }
 
     unlock({ name: data.name, email: data.email, phone: data.phone });
