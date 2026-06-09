@@ -35,10 +35,10 @@ export default function LeadershipSection() {
           {leadership.sub}
         </motion.p>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-stretch">
-          {/* Left: credentials + stats */}
-          <div>
-            <ul className="space-y-3 mb-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+          {/* Left: credentials */}
+          <div className="flex flex-col justify-center">
+            <ul className="space-y-4">
               {leadership.credentials.map((c, i) => (
                 <motion.li
                   key={i}
@@ -46,36 +46,23 @@ export default function LeadershipSection() {
                   whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: true }}
                   transition={{ delay: i * 0.07 }}
-                  className="flex items-start gap-3 text-white"
+                  className="flex items-start gap-3 text-white text-base"
                 >
-                  <CheckCircle size={16} className="text-[#C9A84C] mt-0.5 shrink-0" />
+                  <CheckCircle size={18} className="text-[#C9A84C] mt-0.5 shrink-0" />
                   {c}
                 </motion.li>
               ))}
             </ul>
-
-            {/* Stats 2x2 */}
-            <div className="grid grid-cols-2 gap-4">
-              {stats.map((s) => (
-                <div key={s.label} className="bg-[#1A2940] rounded-xl p-4 text-center">
-                  <div className="font-display text-2xl font-bold text-[#C9A84C]">
-                    {s.value}{s.suffix}
-                  </div>
-                  <div className="text-[#A0AEC0] text-xs mt-1">{s.label}</div>
-                </div>
-              ))}
-            </div>
           </div>
 
-          {/* Right: book cover — full column width, self-stretches to match left */}
-          <div className="w-full rounded-2xl overflow-hidden border border-white/10 shadow-xl">
-            {/* TODO: add Dr. Bhawna Nigam photo here */}
+          {/* Right: book cover — sized to match left content */}
+          <div className="w-full rounded-2xl overflow-hidden border border-white/10 shadow-xl flex items-start">
             <Image
               src="/Screenshot (3398).png"
               alt="Doctorate to Dollars — Book by Dr. Bhawna Nigam"
               width={800}
               height={800}
-              className="w-full h-full object-cover"
+              className="w-full object-cover object-top max-h-[420px]"
               priority
             />
           </div>
